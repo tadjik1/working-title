@@ -1,0 +1,38 @@
+.videos {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.remote {
+  flex: 1;
+}
+
+.local {
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .videos {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .local {
+    width: 40%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .videos {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .local {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

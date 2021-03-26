@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons {
+  margin: 20px 0;
+  align-self: center;
+}
+
+.button {
+  width: 100%;
+  background-color: #2D8CFF;
+  color: white;
+  font-size: 17px;
+  border: 1px #2D8CFF;
+  padding: 12px 20px;
+  text-align: center;
+  margin: 20px 0 5px;
+  transition: .3s ease;
+}
+
+.button:hover {
+  background-color: rgb(45, 165, 255);
+}
+
+.subtitle {
+  font-size: 16px;
+  text-align: right;
+  margin: 0;
+}
+
+.video {
+  width: 320px;
+  height: 240px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}

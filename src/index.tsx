@@ -1,12 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+
 import App from './App';
+import Home from './Home';
+import Room from './Room';
+
 import reportWebVitals from './reportWebVitals';
+
+import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/:id">
+            <Room />
+          </Route>
+        </Switch>
+      </Router>
+    </App>
   </React.StrictMode>,
   document.getElementById('root')
 );
